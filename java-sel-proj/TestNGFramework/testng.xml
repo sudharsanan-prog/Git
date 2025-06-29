@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite">
+
+    <listeners>
+        <listener class-name="TestComponents.Listeners"/>
+    </listeners>
+
+    <test verbose="2" preserve-order="true"
+          name="C:/Users/S122/Downloads/courses/java-selenium/java-sel-proj/TestNGFramework">
+        <classes>
+            <class name="org.example.Test.ErrorValidationTest">
+                <methods>
+                    <include name="product"/>
+                    <include name="productValidation"/>
+                </methods>
+            </class>
+            <class name="org.example.Test.RefStandAloneTest">
+                <methods>
+                    <include name="product"/>
+                </methods>
+            </class>
+            <class name="org.example.Test.SubmitOrderTest">
+                <methods>
+                    <include name="productValidation"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>

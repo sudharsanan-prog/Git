@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite">
+
+    <listeners>
+        <listener class-name="TestComponents.Listeners"/>
+    </listeners>
+
+<!--    <groups>-->
+<!--        <run>-->
+<!--            <include name="ErrorHandling"/>-->
+<!--        </run>-->
+<!--    </groups>-->
+
+
+    <test name="ErrorValidationTest" thread-count="5" verbose="2" preserve-order="true">
+        <classes>
+            <class name="org.example.Test.ErrorValidationTest"/>
+        </classes>
+    </test>
+
+<!--    <test name="ReferenceTest" thread-count="5" verbose="2" preserve-order="true">-->
+<!--        <classes>-->
+<!--            <class name="org.example.Test.SubmitOrderTest"/>-->
+<!--        </classes>-->
+<!--    </test>-->
+
+</suite>

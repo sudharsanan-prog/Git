@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<!--SUITE ACTS AS A DEPARTMENT-->
+<suite name="Regression">
+    <!--TEST ACTS AS A CLASS IN THE DEPARTMENT-->
+    <test verbose="2" preserve-order="true" name="C:/Users/S122/Downloads/courses/java-selenium/java-sel-proj/TestNG">
+        <!--this is the test level parameterization-->
+        <groups>
+            <run>
+                <include name="Smoke"/>
+            </run>
+        </groups>
+        <classes>
+            <class name="test.dayOne"/>
+            <class name="test.dayTwo"/>
+            <class name="test.dayThree"/>
+            <class name="test.dayFour"/>
+        </classes>
+    </test>
+</suite>

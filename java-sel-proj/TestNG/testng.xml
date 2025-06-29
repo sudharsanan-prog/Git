@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite" parallel="tests" thread-count="2">
+    <listeners>
+        <listener class-name="test.Listeners"/>
+    </listeners>
+    <parameter name="URL" value="http://www.google.com"/>
+    <parameter name="API" value="www.api.com"/>
+    <!--prallel can be run in suit or class level, below mentioned is the class level-->
+    <test verbose="2" preserve-order="true" name="C:/Users/S122/Downloads/courses/java-selenium/java-sel-proj/TestNG" parallel="classes" thread-count="2">
+        <classes>
+            <class name="test.dayFive" >
+                <methods>
+                    <include name="Book1"/>
+                    <include name="Books"/>
+                    <include name="Book2"/>
+                </methods>
+            </class>
+            <class name="test.dayFour">
+                <methods>
+                    <include name="webLoginCarLoanMoneyLaundry"/>
+                    <include name="webLoginCarLoanWithMoney"/>
+                    <include name="LoginAPICarLoan"/>
+                </methods>
+            </class>
+            <class name="test.dayOne">
+                <methods>
+                    <include name="afterMethod"/>
+                    <include name="Demo"/>
+                    <include name="newDemo"/>
+                </methods>
+            </class>
+            <class name="test.dayThree">
+                <methods>
+                    <include name="webLoginCarLoan"/>
+                    <include name="testLogin"/>
+                </methods>
+            </class>
+            <class name="test.dayTwo">
+                <methods>
+                    <include name="Book1"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>

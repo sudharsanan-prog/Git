@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<!--SUITE ACTS AS A DEPARTMENT-->
+<suite name="Department">
+    <!--TEST ACTS AS A CLASS IN THE DEPARTMENT-->
+    <test verbose="2" preserve-order="true" name="C:/Users/S122/Downloads/courses/java-selenium/java-sel-proj/TestNG">
+        <packages>
+            <package name="test"/>
+        </packages>
+    </test>
+</suite>
